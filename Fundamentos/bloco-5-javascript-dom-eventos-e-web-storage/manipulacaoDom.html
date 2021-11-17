@@ -32,7 +32,7 @@
   </head>
   <body>
     <header> 
-      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+      <h1 class="title">Exercício 5.1 - JavaEscripito</h1>
     </header>    
     <main class="main-content">
       <section class="center-content">
@@ -50,15 +50,25 @@
         */
 //Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. 
 //Deu certo mas quebrou a segunda tag
-let changeParagraph = document.getElementsByClassName("center-content");
+let changeParagraph = document.getElementsByTagName("p");
 for (let i=0; i<changeParagraph.length; i+=1){
-    changeParagraph[0].innerText = "Uma programadora de sucesso";
+    changeParagraph[0].innerText = "Daqui a 2 anos quero estar programando de olho fechado";
 }
  //Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-
+let changeColor = document.getElementsByClassName("main-content");
+for (let i=0; i<changeColor.length; i+=1){
+changeColor[i].style.background = "rgb(76,164,109)";
+}
  //Crie uma função que mude a cor do quadrado vermelho para branco.
+let newColor = document.getElementsByClassName("center-content");
+for (let i=0; i<changeParagraph.length; i+=1){
+  newColor[i].style.background = "white";
+}
  //Crie uma função que corrija o texto da tag <h1>.
+  document.getElementsByClassName("h1")[0].innerText = "Exercício 5.1 - JavaScript";
+
  //Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+
  //Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         
     </script>
