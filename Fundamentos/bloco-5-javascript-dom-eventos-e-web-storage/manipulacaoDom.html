@@ -65,12 +65,19 @@ for (let i=0; i<changeParagraph.length; i+=1){
   newColor[i].style.background = "white";
 }
  //Crie uma função que corrija o texto da tag <h1>.
-  document.getElementsByClassName("h1")[0].innerText = "Exercício 5.1 - JavaScript";
+  let corrigeTexto = document.getElementsByTagName("h1")
+  for (let i=0; i<corrigeTexto.length; i+=1){
+    corrigeTexto[i].innerText = "Exercício 5.1 - JavaScript"
+}
 
  //Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+  let toUpperCase = document.getElementsByTagName("p");
+  for (let i=0; i<toUpperCase.length; i+=1){
+  toUpperCase[i].style.textTransform = "uppercase"
+} 
 
  //Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-        
+
     </script>
   </body>
 </html>
