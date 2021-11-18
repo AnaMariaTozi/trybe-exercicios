@@ -59,13 +59,6 @@
     <script>
       // COLOQUE SEU CÓDIGO AQUI
 
-        let adicionaTag = body.appendChild("h1");
-        h1.innerText = "Exercício 5.2 - JavaScript DOM"
-
-
-
-
-
       // Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
       let adicionaTagH1 = document.createElement("h1"); //cria elemento
         adicionaTagH1.id = "primeiro título";   //adiciona uma id nele
@@ -73,7 +66,10 @@
         adicionaTagH1.innerText = "Exercício 5.2 - JavaScript DOM"; //adiciona o texto
       
       //Adicione a tag main com a classe main-content como filho da tag body ;
-      
+      let adicionaMain = document.createElement('main'); //cria tag main
+      adicionaMain.className = "main-content"; // adiciona classe 
+      document.body.appendChild(adicionaMain); // coloca ela no body
+
       //Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
   
       //Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
