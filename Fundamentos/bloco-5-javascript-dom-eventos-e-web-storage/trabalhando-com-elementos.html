@@ -68,10 +68,14 @@
       //Adicione a tag main com a classe main-content como filho da tag body ;
       let adicionaMain = document.createElement('main'); //cria tag main
       adicionaMain.className = "main-content"; // adiciona classe 
+      adicionaMain.id = "main"; //adicionei uma id para ficar mais fácil para buscar no próximo exercicio
       document.body.appendChild(adicionaMain); // coloca ela no body
 
       //Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
-  
+      let adicionaSection = document.createElement("section"); //cria elemento section
+      adicionaSection.className = "center-content"; // adiciona classe
+      main.appendChild(adicionaSection); // coloca ele no main
+
       //Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
       //Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
