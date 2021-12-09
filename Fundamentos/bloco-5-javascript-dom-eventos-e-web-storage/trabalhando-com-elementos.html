@@ -64,7 +64,7 @@
         adicionaTagH1.id = "primeiro título";   //adiciona uma id nele
         document.body.appendChild(adicionaTagH1); //coloca o elemento h1 dentro do body
         adicionaTagH1.innerText = "Exercício 5.2 - JavaScript DOM"; //adiciona o texto
-      
+       
       // 2. Adicione a tag main com a classe main-content como filho da tag body ;
       let adicionaMain = document.createElement('main'); //cria tag main
       adicionaMain.className = "main-content"; // adiciona classe 
@@ -79,7 +79,7 @@
       // 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
       let criaTag = document.createElement("p"); //Cria tag p
       document.getElementsByTagName("section")[0].appendChild(criaTag).innerText="Texto na tag P"; //adiciona tag p como filho na section e coloca texto
-      
+     
       // 5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
       let adicionaSection2 = document.createElement("section"); //cria tag
       adicionaSection2.className = "left-content"; //nomeia classe na tag
@@ -97,7 +97,20 @@
         document.getElementsByClassName("left-content")[0].appendChild(image); //coloca dentro da section "left-content"
 
       // 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      //right-content
+      let elementosLista = ["um","dois","três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+      let adicionaLista = document.querySelector(".right-content")  
+      let createList = document.createElement("li");
 
+      for (let i=0; i<elementosLista.length; i+=1){
+        let item = elementosLista[i];
+        
+        createList.innerText = item;
+      }
+
+      adicionaLista.appendChild(createList)
+
+      
       // 9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
 
 
